@@ -1,0 +1,14 @@
+ttf-dejavu
+ttf-droid
+ttf-fantasque-sans-mono
+ttf-fira-sans
+ttf-font-awesome
+ttf-jetbrains-mono
+ttf-jetbrains-mono-nerd 
+ttf-liberation 
+ttf-nerd-fonts-symbols-common
+ttf-nerd-fonts-symbols-mono
+ttf-opensans
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji

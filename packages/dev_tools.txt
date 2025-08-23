@@ -1,0 +1,11 @@
+base-devel
+cmake
+git
+lazygit
+lua
+luarocks
+pycharm-community-edition
+ruff
+ruff-lsp
+tree-sitter
+tree-sitter-cli

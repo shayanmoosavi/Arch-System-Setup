@@ -1,0 +1,6 @@
+code
+nano
+nano-syntax-highlighting
+neovim
+vim
+zed

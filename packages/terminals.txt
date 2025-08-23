@@ -1,0 +1,7 @@
+ghostty
+ghostty-shell-integration
+ghostty-terminfo
+kitty
+kitty-shell-integration
+kitty-terminfo
+wezterm

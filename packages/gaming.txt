@@ -1,0 +1,8 @@
+gamemode
+lutris
+mangohud
+openrgb
+proton-ge-custom-bin
+protontricks-git
+steam
+steamtinkerlaunch

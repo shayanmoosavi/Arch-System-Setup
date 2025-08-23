@@ -1,0 +1,10 @@
+texlab
+texlive-bibtexextra
+texlive-binextra
+texlive-fontsextra
+texlive-latex
+texlive-latexextra
+texlive-latexrecommended
+texlive-luatex
+texlive-xetex
+texstudio

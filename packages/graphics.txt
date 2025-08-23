@@ -1,0 +1,17 @@
+nvidia-dkms
+nvidia-prime
+nvidia-settings
+nvidia-utils
+mesa
+mesa-demos
+mesa-utils
+lib32-mesa
+lib32-mesa-demos
+lib32-mesa-utils
+vulkan-headers
+vulkan-mesa-layers
+vulkan-tools
+vulkan-validation-layers
+lib32-nvidia-utils
+lib32-vulkan-mesa-layers
+lib32-vulkan-radeon
