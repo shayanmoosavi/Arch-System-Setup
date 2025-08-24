@@ -1,0 +1,17 @@
+cliphist
+hypridle
+hyprland
+hyprland-qt-support
+hyprcursor
+hyprlock
+hyprpicker
+hyprpolkitagent
+hyprsunset
+hyprsysteminfo
+pipewire
+qt5-wayland
+qt6-wayland
+swaync
+waybar
+wireplumber
+xdg-desktop-portal-hyprland
