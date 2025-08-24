@@ -6,4 +6,5 @@ plymouth
 qt6ct
 qt5ct
 swww
+sddm-astronaut-theme
 wallust-git
