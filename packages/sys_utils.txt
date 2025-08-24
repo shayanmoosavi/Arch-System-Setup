@@ -39,3 +39,4 @@ unrar
 unzip
 update-grub
 usbutils
+xwayland
