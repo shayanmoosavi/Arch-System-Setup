@@ -2,13 +2,17 @@ ttf-dejavu
 ttf-droid
 ttf-fantasque-sans-mono
 ttf-fira-sans
+ttf-firacode-nerd
 ttf-font-awesome
+ttf-iosevkatermslab-nerd
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd 
 ttf-liberation 
+ttf-martian-mono-nerd
 ttf-nerd-fonts-symbols-common
 ttf-nerd-fonts-symbols-mono
 ttf-opensans
+ttf-victor-mono-nerd
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
