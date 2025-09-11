@@ -1,3 +1,4 @@
+blueman
 cliphist
 hypridle
 hyprland
@@ -8,6 +9,7 @@ hyprpicker
 hyprpolkitagent
 hyprsunset
 hyprsysteminfo
+network-manager-applet
 pipewire
 qt5-wayland
 qt6-wayland
