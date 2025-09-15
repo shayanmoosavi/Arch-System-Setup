@@ -3,6 +3,7 @@ cliphist
 hypridle
 hyprland
 hyprland-qt-support
+hyprland-qtutils
 hyprcursor
 hyprlock
 hyprpicker
