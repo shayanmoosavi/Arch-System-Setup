@@ -8,3 +8,4 @@ qt5ct
 swww
 sddm-astronaut-theme
 wallust-git
+waypaper-git

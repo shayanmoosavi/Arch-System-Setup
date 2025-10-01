@@ -1,5 +1,5 @@
 blueman
-cliphist
+clipse
 hypridle
 hyprland
 hyprland-qt-support
