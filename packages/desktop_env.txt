@@ -2,7 +2,7 @@ discord
 loupe
 megasync
 obsidian
-qpdfview
+okular
 speedcrunch
 telegram-desktop
 thunar
