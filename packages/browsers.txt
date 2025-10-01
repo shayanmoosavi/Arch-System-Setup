@@ -1,6 +1,3 @@
 brave-bin
 firefox
 floorp
-vivaldi
-vivaldi-ffmpeg-codecs
-zen-browser-bin
