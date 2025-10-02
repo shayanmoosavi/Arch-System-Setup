@@ -10,6 +10,7 @@ flatpak
 fzf
 fd
 gawk
+grub-btrfs
 htop
 inxi
 man
@@ -30,6 +31,8 @@ rsync
 snapper
 snapper-support
 snapper-tools
+snap-pac
+snap-pac-grub
 stow
 sudo
 tar
