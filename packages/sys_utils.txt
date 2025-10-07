@@ -2,6 +2,7 @@ amd-ucode
 bat
 btop
 cpupower
+delta
 eza
 fastfetch
 figlet
@@ -15,6 +16,7 @@ htop
 inxi
 man
 man-pages
+mission-center
 nfs-utils
 ntfs-3g
 nvtop
@@ -43,3 +45,4 @@ unzip
 update-grub
 usbutils
 xwayland
+yad

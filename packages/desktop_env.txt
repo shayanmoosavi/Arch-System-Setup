@@ -1,8 +1,11 @@
 discord
+libreoffice-fresh
 loupe
 megasync
 obsidian
 okular
+onlyoffice-bin
+rnote
 speedcrunch
 telegram-desktop
 thunar
