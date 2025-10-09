@@ -3,6 +3,7 @@ bat
 btop
 cpupower
 delta
+expect
 eza
 fastfetch
 figlet
