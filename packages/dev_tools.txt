@@ -1,5 +1,6 @@
 base-devel
 cmake
+code
 git
 github-cli
 lazygit
@@ -10,3 +11,4 @@ ruff
 ruff-lsp
 tree-sitter
 tree-sitter-cli
+zed
