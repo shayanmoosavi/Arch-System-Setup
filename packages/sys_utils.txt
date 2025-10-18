@@ -15,6 +15,7 @@ gawk
 grub-btrfs
 htop
 inxi
+lm_sensors
 man
 man-pages
 mission-center
