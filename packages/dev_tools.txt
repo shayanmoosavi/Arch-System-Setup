@@ -1,6 +1,7 @@
 base-devel
 cmake
 git
+github-cli
 lazygit
 lua
 luarocks
