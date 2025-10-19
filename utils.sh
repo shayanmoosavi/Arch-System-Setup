@@ -158,3 +158,38 @@ install_packages() {
         error_exit "Failed to install packages"
     fi
 }
+
+# Function to install AUR packages using paru
+install_aur_packages() {
+    local aur_pkgs=("$@")
+
+    check_not_root
+
+    # Check if paru is installed
+    if ! command -v paru &> /dev/null; then
+        error_exit "paru is not installed. Run 1-setup-paru.sh first."
+    fi
+
+    local packages_to_install=()
+
+    for pkg in "${aur_pkgs[@]}"; do
+        if is_installed "$pkg"; then
+            log INFO "AUR package '$pkg' is already installed, skipping"
+        else
+            packages_to_install+=("$pkg")
+        fi
+    done
+
+    if [ ${#packages_to_install[@]} -eq 0 ]; then
+        log SUCCESS "No new AUR packages to install"
+        return 0
+    fi
+
+    log INFO "Installing ${#packages_to_install[@]} AUR packages: ${packages_to_install[*]}"
+
+    if paru -S --needed --noconfirm "${packages_to_install[@]}"; then
+        log SUCCESS "Successfully installed ${#packages_to_install[@]} AUR packages"
+    else
+        error_exit "Failed to install AUR packages"
+    fi
+}
