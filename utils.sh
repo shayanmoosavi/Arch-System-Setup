@@ -12,28 +12,33 @@ install_packages() {
 
     # List of packages to install
     local packages=()
-    
+
     printf "Reading packages list...\n"
-    for file in $pkg_dir/*; do
+    # Use find to safely get files, then use while read to process line by line
+    find "$pkg_dir" -type f -print0 | while IFS= read -r -d $'\0' file; do
 
-        # Reading the packages from the files
-        mapfile -t pkgs < $file
-
-        printf "Read file $file\n"
+        printf "Read file %s\n" "$file"
         printf "Checking if the packages are already installed\n"
-        for pkg in ${pkgs[@]}; do
-            if ! is_installed $pkg; then
 
-                # Adding the packages which are not installed
-                packages+=($pkg)
+        # Read packages line by line from the file
+        while IFS= read -r pkg; do
+
+            # Strip leading/trailing whitespace and skip if line is empty or starts with #
+            pkg=$(echo "$pkg" | xargs)
+            if [[ -z "$pkg" || "$pkg" =~ ^# ]]; then
+                continue
             fi
-        done
+
+            if ! is_installed "$pkg"; then
+                # Adding the packages which are not installed
+                packages+=("$pkg")
+            fi
+        done < "$file"
     done
-   
+
     # Installing the packages
     if [ ${#packages[@]} -ne 0 ]; then
         echo "Installing: ${packages[*]}"
-        sudo pacman -S --needed "${packages[@]}"
+        sudo pacman -S --needed --noconfirm "${packages[@]}"
     fi
-} 
-
+}
