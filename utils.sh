@@ -15,7 +15,7 @@ install_packages() {
 
     printf "Reading packages list...\n"
     # Use find to safely get files, then use while read to process line by line
-    find "$pkg_dir" -type f -print0 | while IFS= read -r -d $'\0' file; do
+    while IFS= read -r -d $'\0' file; do
 
         printf "Read file %s\n" "$file"
         printf "Checking if the packages are already installed\n"
@@ -25,6 +25,7 @@ install_packages() {
 
             # Strip leading/trailing whitespace and skip if line is empty or starts with #
             pkg=$(echo "$pkg" | xargs)
+
             if [[ -z "$pkg" || "$pkg" =~ ^# ]]; then
                 continue
             fi
@@ -34,7 +35,7 @@ install_packages() {
                 packages+=("$pkg")
             fi
         done < "$file"
-    done
+    done < <(find "$pkg_dir" -type f -print0)
 
     # Installing the packages
     if [ ${#packages[@]} -ne 0 ]; then
