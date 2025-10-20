@@ -3,10 +3,12 @@
 # Exit on error, undefined variables, and pipe failures
 set -euo pipefail
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # Configuration
-pkg_dir=./packages
-log_dir=./logs
-log_file="$log_dir/setup-$(date +%Y%m%d-%H%M%S).log"
+pkg_dir="$SCRIPT_DIR/packages"
+log_dir="$SCRIPT_DIR/logs"
+log_file="$log_dir/setup-$(date +%Y-%m-%d).log"
 
 # Colors for output
 RED='\033[0;31m'
@@ -31,19 +33,19 @@ log() {
     # Write to stdout with colors
     case "$level" in
         INFO)
-            printf "${BLUE}[INFO]${NC} $message"
+            printf "${BLUE}[INFO]${NC} $message\n"
             ;;
         SUCCESS)
-            printf "${GREEN}[SUCCESS]${NC} $message"
+            printf "${GREEN}[SUCCESS]${NC} $message\n"
             ;;
         WARNING)
-            printf "${YELLOW}[WARNING]${NC} $message"
+            printf "${YELLOW}[WARNING]${NC} $message\n"
             ;;
         ERROR)
-            printf "${RED}[ERROR]${NC} $message"
+            printf "${RED}[ERROR]${NC} $message\n"
             ;;
         *)
-            printf "$message"
+            printf "$message\n"
             ;;
     esac
 }
