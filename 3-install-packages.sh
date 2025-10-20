@@ -15,6 +15,7 @@ install_packages
 # Defining packages to install
 aur_pkgs=(
     marp-cli
+    matugen-bin
     megacmd-bin
     klogg-bin
     pdf4qt-bin
