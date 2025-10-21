@@ -154,7 +154,7 @@ install_packages() {
 
     log INFO "Installing ${#packages[@]} packages: ${packages[*]}"
 
-    if sudo pacman -S --needed --noconfirm "${packages[@]}"; then
+    if sudo pacman -S --needed "${packages[@]}"; then
         log SUCCESS "Successfully installed ${#packages[@]} packages"
     else
         error_exit "Failed to install packages"
@@ -189,7 +189,7 @@ install_aur_packages() {
 
     log INFO "Installing ${#packages_to_install[@]} AUR packages: ${packages_to_install[*]}"
 
-    if paru -S --needed --noconfirm "${packages_to_install[@]}"; then
+    if paru -S --needed "${packages_to_install[@]}"; then
         log SUCCESS "Successfully installed ${#packages_to_install[@]} AUR packages"
     else
         error_exit "Failed to install AUR packages"
