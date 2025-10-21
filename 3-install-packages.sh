@@ -16,6 +16,7 @@ install_packages
 aur_pkgs=(
     marp-cli
     matugen-bin
+    megasync-bin
     megacmd-bin
     klogg-bin
     pdf4qt-bin
