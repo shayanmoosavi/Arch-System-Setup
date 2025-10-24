@@ -14,6 +14,7 @@ install_packages
 
 # Defining packages to install
 aur_pkgs=(
+    grub-customizer
     marp-cli
     matugen-bin
     megasync-bin
