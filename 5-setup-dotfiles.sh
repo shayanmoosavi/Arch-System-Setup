@@ -61,7 +61,7 @@ if [[ -d "$DOTFILES_DIR" ]]; then
         fi
 
         # Pull latest changes
-        if git pull "$current_branch"; then
+        if git pull origin "$current_branch"; then
             log SUCCESS "Dotfiles updated successfully"
         else
             log WARNING "Failed to update dotfiles, continuing with existing version"
